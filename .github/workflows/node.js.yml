@@ -4,6 +4,11 @@ on:
   push:
     branches: [ "main" ] # Trigger on pushes to the main branch
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write # Required for OIDC token generation
+
 jobs:
   build:
     runs-on: ubuntu-latest
