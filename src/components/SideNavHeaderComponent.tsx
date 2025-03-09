@@ -1,4 +1,4 @@
-import React from 'react'
+
 import SideBar from './SideBar'
 import "../styles/indexSideNav.css"
 import NavHeader from './NavHeader'

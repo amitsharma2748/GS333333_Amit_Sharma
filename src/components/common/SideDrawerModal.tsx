@@ -1,5 +1,5 @@
 import { Drawer } from '@mui/material'
-import React, { ForwardedRef, ReactNode, forwardRef } from 'react'
+import  { ForwardedRef, ReactNode, forwardRef } from 'react'
 
 type SideModalPropsType = {
   isOpen: boolean

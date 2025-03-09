@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from "react";
-import AutoSuggestDropdown from "../../../components/common/AutoSuggestDropdown";
-import CustomTextField from "../../../components/common/CustomTextField";
-import { STORES_CITIES, STORES_STATES } from "../../../utils/globalContants";
+import  { useState } from "react"; 
+import CustomTextField from "../../../components/common/CustomTextField"; 
 import { Button, Typography } from "@mui/material";
-import { useDispatch, useSelector } from "react-redux";
-import { addStores } from "../../../redux/stores/getStoresSlice";
+import {  useSelector } from "react-redux"; 
 import { RootState, useAppDispatch } from "../../../redux/store";
 import { addSku, SKuStateType } from "../../../redux/stores/getSkuSlice";
 import CustomNumberField from "../../../components/common/CustomNumberField";

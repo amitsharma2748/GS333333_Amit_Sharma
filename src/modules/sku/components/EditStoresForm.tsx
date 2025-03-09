@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import AutoSuggestDropdown from "../../../components/common/AutoSuggestDropdown";
 import CustomTextField from "../../../components/common/CustomTextField";
 import { STORES_CITIES, STORES_STATES } from "../../../utils/globalContants";
 import { Button, Typography } from "@mui/material";
-import { useDispatch, useSelector } from "react-redux";
-import { addStores, updateStoreByKey } from "../../../redux/stores/getStoresSlice";
+import {  useSelector } from "react-redux";
+import {  updateStoreByKey } from "../../../redux/stores/getStoresSlice";
 import { RootState, useAppDispatch } from "../../../redux/store";
 
 const EditStoresForm = ({onClose}:any) => {

@@ -1,4 +1,4 @@
-import React from "react";
+ 
 import logo from "../assets/G_Logo.svg";
 
 const NavHeader = () => {

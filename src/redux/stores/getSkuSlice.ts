@@ -32,7 +32,7 @@ const getSkuSlice=createSlice({
         },
         deleteSkuByKey:(state,action)=>{
             const deleteKey= action.payload
-            const updatedArr=state.skuArr.filter((item,index)=>(index!==deleteKey))
+            const updatedArr=state.skuArr.filter((_,index)=>(index!==deleteKey))
             state.skuArr=[...updatedArr]
         },
         updateStoreByKey:(state,action)=>{

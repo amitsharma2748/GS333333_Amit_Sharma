@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
-import { STORES_STATES } from "../../utils/globalContants";
+import React, { useEffect, useRef, useState } from "react"; 
 import "../../styles/autosuggestDropdown.css";
 import { MenuItem } from "../../utils/globalTypes";
 

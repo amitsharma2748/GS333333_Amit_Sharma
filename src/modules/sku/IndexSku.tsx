@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
-import { RootState } from "../../redux/store";
+import  {  useState } from "react"; 
 import SideDrawerModal from "../../components/common/SideDrawerModal";
 import StoresTableCommponent from "./components/StoresTableCommponent";
 import AddStoresForm from "./components/AddSkuForm";
 
-const IndexSku = () => {
-  const storesList = useSelector((state: RootState) => state.getStoresSlice);
+const IndexSku = () => { 
   const [isModalOpen,setIsModalOpen]=useState(false)
 
   const handleCloseModal=()=>{

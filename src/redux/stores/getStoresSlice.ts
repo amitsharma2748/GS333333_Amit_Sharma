@@ -32,7 +32,7 @@ const getStoresSlice=createSlice({
         },
         deleteStoreByKey:(state,action)=>{
             const deleteKey= action.payload
-            const updatedArr=state.storeArr.filter((item,index)=>(index!==deleteKey))
+            const updatedArr=state.storeArr.filter((_,index)=>(index!==deleteKey))
             state.storeArr=[...updatedArr]
         },
         updateStoreByKey:(state,action)=>{

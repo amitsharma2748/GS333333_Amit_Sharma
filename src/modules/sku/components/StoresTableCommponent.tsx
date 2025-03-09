@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { useSelector } from "react-redux";
-import { RootState, useAppDispatch } from "../../../redux/store";
-import {  storeEditObj, StoreStateType } from "../../../redux/stores/getStoresSlice";
+import { RootState, useAppDispatch } from "../../../redux/store"; 
 import { nanoid } from "nanoid";
-import { IconButton, Menu, MenuItem, Typography } from "@mui/material";
+import { IconButton,  Typography } from "@mui/material";
 import SideDrawerModal from "../../../components/common/SideDrawerModal";
-import { MdDelete, MdEdit } from "react-icons/md";
+import { MdDelete } from "react-icons/md";
 import EditStoresForm from "./EditStoresForm";
 import { deleteSkuByKey, SKuStateType } from "../../../redux/stores/getSkuSlice";
 
@@ -18,14 +17,14 @@ const StoresTableComponent = () => {
   // Track menu state
   const [isEditModalOpen, setIsEditModalOpen] = useState<boolean>(false);
 
-  const handleEditOpen = (payload:SKuStateType,index: number) => {
-    const updateObj={
-      editKey:index,
-      payload
-    }
-    dispatch(storeEditObj(updateObj))
-    setIsEditModalOpen(true)
-  };
+  // const handleEditOpen = (payload:SKuStateType,index: number) => {
+  //   const updateObj={
+  //     editKey:index,
+  //     payload
+  //   }
+  //   dispatch(storeEditObj(updateObj))
+  //   setIsEditModalOpen(true)
+  // };
 
   const handleDelete = (index: number) => {
      dispatch(deleteSkuByKey(index))

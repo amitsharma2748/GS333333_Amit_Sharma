@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import {  NavLink, useLocation } from "react-router-dom";
 import { paths } from "../utils/path";
 import { LOCATION_ENUM } from "../utils/globalTypes";
 
